@@ -5,7 +5,7 @@ metadata:
   namespace: dev
 spec:
   selector:
-    app: new-app
+    app: great-app
   ports:
   - port: 9090
     targetPort: 9090
