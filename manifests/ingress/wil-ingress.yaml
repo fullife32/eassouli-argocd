@@ -5,6 +5,9 @@ metadata:
   namespace: dev
   labels:
     name: wil
+  annotations:
+    ingress.kubernetes.io/protocol: http
+    ingress.kubernetes.io/ssl-redirect: "false"
 spec:
   rules:
   - http:
