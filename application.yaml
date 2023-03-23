@@ -10,6 +10,8 @@ spec:
     path: dev
     repoURL: 'https://github.com/fullife32/eassouli-argocd.git'
     targetRevision: HEAD
+    directory:
+      recurse: true
   project: default
   syncPolicy:
     automated:
@@ -17,3 +19,4 @@ spec:
       selfHeal: true
     syncOptions:
       - CreateNamespace=true
+      - ApplyOutOfSyncOnly=true
